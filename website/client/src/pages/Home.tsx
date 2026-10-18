@@ -41,4 +41,3 @@
     </main>
     <SiteFooter />
   </div>;
-}
