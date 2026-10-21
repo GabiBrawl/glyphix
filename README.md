@@ -2,7 +2,7 @@
 
 <!-- Header Banner & Typing Intro -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=D5FC2D&height=180&section=header&text=GLYPHIX&fontSize=60&fontColor=1a1a1a&animation=fadeIn&fontAlignY=38" width="100%" alt="Glyphix Banner" />
-
+ 
 <br/>
 
 <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=26&pause=1000&color=D5FC2D&center=true&vCenter=true&width=550&lines=Real-Time+Music+Visualizer.;Nothing+Phone+Glyph+Sync.;Desktop+Companion+%2B+OpenRGB." alt="Typing SVG" />
