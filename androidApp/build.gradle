@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace 'com.glyphix.app'
-    compileSdk 37
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.glyphix.app"
