@@ -471,7 +471,7 @@ public class AudioCaptureService extends Service {
                     mSmartSource.tick(mVisualizerConfig, mSelectedDevice);
                     if (mVisualizer == null && !mSmartSource.isDatabasePlayback()
                             && now - mLastSmartSetupMs > 5000
-                            && ActivityCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO) == PackageManager.PERMISSION_GRANTED) {
+                            && ActivityCompat.checkSelfPermission(AudioCaptureService.this, Manifest.permission.RECORD_AUDIO) == PackageManager.PERMISSION_GRANTED) {
                         mLastSmartSetupMs = now;
                         mWorkerHandler.post(() -> { if (mCapturing && mCaptureSource == CaptureSource.SMART) setupVisualizerCapture(); });
                     }
@@ -707,7 +707,7 @@ public class AudioCaptureService extends Service {
         if (mWorkerHandler != null) mWorkerHandler.post(() -> {
             stopCapture();
             if (mCaptureSource == CaptureSource.SMART) startCaptureInternal(CaptureSource.SMART, 0, null);
-        else if (mCaptureSource == CaptureSource.MIC) startMicCapture();
+            else if (mCaptureSource == CaptureSource.MIC) startMicCapture();
             else if (mCaptureSource == CaptureSource.VIZUALIZER) startVizualizerCapture();
             else if (mCaptureSource == CaptureSource.SPOTIFY) startSpotifyCapture();
             else if (mCaptureSource == CaptureSource.NETWORK) startNetworkCapture();
